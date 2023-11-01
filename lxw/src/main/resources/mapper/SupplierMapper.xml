@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsy.lxw.mapper.SupplierMapper">
+
+    <select id="getSupplierByName" resultType="com.hsy.lxw.pojo.Supplier">
+        select * from la_ship_supplier where supplier_name=#{name}
+    </select>
+</mapper>
